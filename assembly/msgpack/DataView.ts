@@ -58,7 +58,7 @@ export class DataView {
 
   peekUint8(): u8 {
     this._checkIndexInRange("peekUint8", 0);
-    return bswap(load<u8>(this.getMemCursor()));
+    return bswap(<u8>load<u8>(this.getMemCursor()));
   }
 
   discard(length: u32): void {
@@ -142,7 +142,7 @@ export class DataView {
 
   setInt16(value: i16): void {
     this._checkIndexInRange("setInt16", 2);
-    store<i16>(this.getMemCursor(), bswap(value));
+    store<i16>(this.getMemCursor(), bswap<i16>(value)); // type argument to bswap is necessary since assemblyscript@0.20.00
     this._index += 2;
   }
 

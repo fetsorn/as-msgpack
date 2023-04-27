@@ -1,2 +1,2 @@
-export { BigInt } from "as-bigint";
-export { BigNumber, Rounding } from "as-bignumber";
+export { BigInt } from "@fetsorn/as-bigint/assembly";
+export { BigNumber, Rounding } from "@fetsorn/as-bignumber/assembly";

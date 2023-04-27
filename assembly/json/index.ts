@@ -1,1 +1,1 @@
-export * from "@web3api/assemblyscript-json";
+export * from "@fetsorn/as-json/assembly";

@@ -1,0 +1,4 @@
+/node_modules/
+*.DS_Store
+/assembly/__tests__/__snapshots__/
+/build/

@@ -1,3 +1,3 @@
-# @polywrap/wasm-as
+# @fetsorn/as-msgpack
 
-The AssemblyScript implementation of the WRAP Wasm runtime.
+The AssemblyScript implementation of msgpack.

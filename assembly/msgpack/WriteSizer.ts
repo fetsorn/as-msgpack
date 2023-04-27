@@ -199,7 +199,7 @@ export class WriteSizer extends Write {
   }
 
   writeOptionalBool(value: Box<bool> | null): void {
-    if (value === null) {
+    if (changetype<usize>(value) == 0) {
       this.writeNil();
       return;
     }
@@ -208,7 +208,7 @@ export class WriteSizer extends Write {
   }
 
   writeOptionalInt8(value: Box<i8> | null): void {
-    if (value === null) {
+    if (changetype<usize>(value) == 0) {
       this.writeNil();
       return;
     }
@@ -217,7 +217,7 @@ export class WriteSizer extends Write {
   }
 
   writeOptionalInt16(value: Box<i16> | null): void {
-    if (value === null) {
+    if (changetype<usize>(value) == 0) {
       this.writeNil();
       return;
     }
@@ -226,7 +226,7 @@ export class WriteSizer extends Write {
   }
 
   writeOptionalInt32(value: Box<i32> | null): void {
-    if (value === null) {
+    if (changetype<usize>(value) == 0) {
       this.writeNil();
       return;
     }
@@ -235,7 +235,7 @@ export class WriteSizer extends Write {
   }
 
   writeOptionalUInt8(value: Box<u8> | null): void {
-    if (value === null) {
+    if (changetype<usize>(value) == 0) {
       this.writeNil();
       return;
     }
@@ -244,7 +244,7 @@ export class WriteSizer extends Write {
   }
 
   writeOptionalUInt16(value: Box<u16> | null): void {
-    if (value === null) {
+    if (changetype<usize>(value) == 0) {
       this.writeNil();
       return;
     }
@@ -253,7 +253,7 @@ export class WriteSizer extends Write {
   }
 
   writeOptionalUInt32(value: Box<u32> | null): void {
-    if (value === null) {
+    if (changetype<usize>(value) == 0) {
       this.writeNil();
       return;
     }
@@ -262,7 +262,7 @@ export class WriteSizer extends Write {
   }
 
   writeOptionalFloat32(value: Box<f32> | null): void {
-    if (value === null) {
+    if (changetype<usize>(value) == 0) {
       this.writeNil();
       return;
     }
@@ -271,7 +271,7 @@ export class WriteSizer extends Write {
   }
 
   writeOptionalFloat64(value: Box<f64> | null): void {
-    if (value === null) {
+    if (changetype<usize>(value) == 0) {
       this.writeNil();
       return;
     }
@@ -298,7 +298,7 @@ export class WriteSizer extends Write {
   }
 
   writeOptionalBigInt(value: BigInt | null): void {
-    if (value === null) {
+    if (changetype<usize>(value) == 0) {
       this.writeNil();
       return;
     }
@@ -307,7 +307,7 @@ export class WriteSizer extends Write {
   }
 
   writeOptionalBigNumber(value: BigNumber | null): void {
-    if (value === null) {
+    if (changetype<usize>(value) == 0) {
       this.writeNil();
       return;
     }
